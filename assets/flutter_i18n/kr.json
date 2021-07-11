@@ -1,0 +1,25 @@
+{
+    "nav": {
+        "select_mood": "기분 선택하기",
+        "mood_calendar": "기분 달력",
+        "logout": "로그아웃",
+        "settings": "설정",
+        "chart": "차트",
+        "graph": "그래프",
+        "map": "지도"
+    },
+    "settings": {
+        "title": "설정",
+        "password_settings": {
+            "title":"비밀번호 변경"
+        },
+        "language_settings": {
+            "title": "언어 설정",
+            "selected": "선택된: ",
+            "current_locale": "현재 로케일: {locale}"
+        },
+        "color_settings": {
+            "title": "색상 설정"
+        }
+    }
+}

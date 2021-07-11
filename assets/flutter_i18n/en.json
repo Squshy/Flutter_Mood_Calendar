@@ -1,0 +1,26 @@
+{
+    "nav": {
+        "select_mood": "Select Mood",
+        "mood_calendar": "Mood Calendar",
+        "logout": "Logout",
+        "settings": "Settings",
+        "chart": "Chart",
+        "graph": "Graph",
+        "map": "Map"
+        
+    },
+    "settings": {
+        "title": "Settings",
+        "password_settings": {
+            "title":"Change Password"
+        },
+        "language_settings": {
+            "title": "Language Settings",
+            "selected": "Selected: ",
+            "current_locale": "Current locale: {locale}"
+        },
+        "color_settings": {
+            "title": "Color Settings"
+        }
+    }
+}

@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "668773708335",
+    "firebase_url": "https://csci4100u---mood.firebaseio.com",
+    "project_id": "csci4100u---mood",
+    "storage_bucket": "csci4100u---mood.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:668773708335:android:d363fa431dcf9b5c098cda",
+        "android_client_info": {
+          "package_name": "com.example.mood"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "668773708335-7paasketg2723cs1366bnqjdq3j6uh7v.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAAYxQySIybp7Uvy9T_KK4iJs8mjyuy9OU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "668773708335-7paasketg2723cs1366bnqjdq3j6uh7v.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
