@@ -1,15 +1,14 @@
-# mood
+## How to use our project
+To `login` you startup the app and input your username and password but if you have yet to create an account you can go to the create account text below the login form that is clickable which will open a dialog to register. To `register` you input a username, password, gender and birthday which will then take you to the home page of our app. To logout of the app you click on the logout button in the naviation the top left and it will open a dialog to confirm you want to logout.  
 
-A new mood diary/calendar productivity project.
+To see notifications working, go over to `mood/lib/notifications.dart`, in here you fill find a function called `_nextInstanceOfEightPM()`.  To view the notification working immediately, change the last parameter of `tz.TZDateTime scheduledDate = tz.TZDateTime(tz.local, now.year, now.month, now.day, 20);` to your speicifed hour.  If you want more precision then you can also add extra parameters for minutes, and seconds.  Make these changes and you will see a notification appearing at the specified time.   Keep in mind that this timezone is in UTC.
 
-## Getting Started
+The `Calendar` page displays a calendar widget.  The individual days will change color according to the recorded moods on those days.  To see data appear here more than your current day, in the `mood/lib/views/loading_screen/loading_screen.dart` file, uncomment the line with the function call of `addEmBaby();`.  This should be on line 52. **PLEASE NOTE YOU WILL HAVE TO BE LOGGED IN PREVIOUSLY TO VIEW THESE CHANGES.  THIS WORKS OFF OF THE STORED ID IN SHARED PREFERENCES.  YOU WILL HAVE TO CREATE AN ACCOUNT IF YOU DO NOT HAVE ONE ALREADY, BE LOGGED IN AND THEN RESTART YOUR APP.**  After uncommenting and running it once, comment it out again so you do not fill the database with multiple entries for a single day.  
 
-# To navigate to the snackbar and local database portion:
-At the home page click the top left and press the "mood test form / snackbar" nav item
-Then choose between adding, editing (after you create a mood) or delete
+To add or edit a mood either navigate from the button displayed on the home screen, or through the navigation drawer.  Click the `Select Mood` button and it will take you to the specified page.  You can also do so from the `Calendar` page.  If you click on a colored day it will display a page with information about that day.  If you click on today it will take you to add a mood for today if you have not already.  If you have already added a mood for today and you click today's date, it will take you to a page displaying information about the mood.  At this page you can click a floating action button to edit the mood. 
 
-This page is used to implement the basics of CRUD that will be used for the next phase when I integrate the mood forms with the calendar.
+On the `Settings` page, you can see an option for `Color Settings` and `Language Settings`.  If you click on `Color Settings` it will send you to a page where you can select colors you want displayed for certain moods.  After making changes you can save you changes and see them displayed throughout the application.  In the `Language Settings` page you can switch your languages.  Select which language you want and hit save and see the `Settings`, `Navigation`, and `Language Settings` pages translate. In the `Change Passowrd` page you can input a new password that you want to change and and a confirmation one as to make sure you submit the one you want.
 
-Read is integrated with Create/Insert, Update, Delete.
+From the navigation if you select `Chart`, this will take you to the `Chart` page.  Here is displayed a DataTable with information of all the moods for the user.  If you select the `Graph` option from the navigation it will take you to the `Graph` page.  On here it will show you a bar graph depicting the number of times each mood has been added for the current user.
 
-A snackbar will appear for each CRUD, color and text changing depending on if you performed CRUD or pressed the backarrow on the top left.
+From the navigation panel, if you go to the `Map` page, it will display a map that works similiar to `Lab09/10`.  This is added here for the requirement as we could not find a good use for maps in this project.
